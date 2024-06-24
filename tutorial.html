@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/tutorial.css">
+  <title>Tutorial</title>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="nav_logo">
+      <img src="imagens/logo.png" alt="Logo" class="logo-img">Aprenda Programação
+    </div>
+    <ul class="nav_links">
+      <li><a href="index.html">Início</a></li>
+      <li><a href="#">Tutoriais</a></li>
+      <li><a href="#">Exercícios</a></li>
+      <li><a href="perfil.html">Fórum</a></li>
+      <li><a href="#">Sobre Nós</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+    <div class="hamburger-menu" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+    </div>
+  </nav>
+
+  <div class="slider">
+
+    <div class="item">
+      <img src="imagensC/html-5-e-css-3.png" alt="imagem dos icones de html e css">
+      <div class="content">
+        <div class="title">teste </div>
+        <div class="type">teste </div>
+        <div class="description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis aspernatur corporis
+          eveniet
+          adipisci. Consectetur aliquid perspiciatis perferendis, sequi dicta aspernatur officia quasi voluptates
+          temporibus ad nisi numquam quos corporis? Sequi!</div>
+        <div class="button"> <button>veja mais</button></div>
+
+
+      </div>
+
+    </div>
+
+
+
+
+
+  </div>
+
+  <script>
+    // Verificar se o usuário está logado ao carregar a página
+    document.addEventListener('DOMContentLoaded', function () {
+      var usuarioLogado = localStorage.getItem('usuarioLogado');
+      if (!usuarioLogado || usuarioLogado !== 'true') {
+        // Se não estiver logado, redirecionar para a página de login
+        window.location.href = 'login.html';
+      }
+    });
+  </script>
+</body>
+
+</html>

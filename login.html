@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="CSS/modal.css">
+    <title>Entrar</title>
+</head>
+
+<body>
+    <a id="linkIndex" href="forum/forums.html" style="display: none;"></a>
+    <nav class="navbar">
+        <div class="nav_logo">
+            <img src="imagens/logo.png" alt="Logo" class="logo-img">Aprenda Programação
+        </div>
+        <ul class="nav-ul">
+            <li><a href="index.html">Início</a></li>
+            <li><a href="">Tutoriais</a></li>
+            <li><a href="">Exercícios</a></li>
+            <li><a href="forum/forums.html">Fórum</a></li>
+            <li><a href="">Sobre nós</a></li>
+            <li><a href="">Contato</a></li>
+
+        </ul>
+    </nav>
+    <div class="main-login">
+        <div class="left-login">
+            <h1>Bem vindo de volta! </h1>
+            <img src="animaçao.svg" class="left-login-image" alt="">
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Entrar</h1>
+                <div class="textfild">
+                    <label for="usuario">Email</label>
+                    <input type="text" name="usuario" placeholder="Email" id="usuario">
+                </div>
+                <div class="textfild">
+                    <label for="senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Senha" id="senha">
+                </div>
+                <button type="button" class="btn-login" onclick="validarLogin()">Login</button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="js/scriptlogin.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,592 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fontes */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Tema Claro */
+body {
+    background-color: aliceblue;
+    color: #000;
+}
+
+[data-theme="dark"] body {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+}
+
+[data-theme="dark"] .navbar {
+    background-color: #1e1e1e;
+}
+
+.nav_logo {
+    display: flex;
+    align-items: center;
+    color: #000000;
+    font-size: 24px;
+    font-weight: 600;
+    margin-left: 10vw;
+}
+
+.nav_logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 50%;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav_links {
+    margin-left: auto;
+    margin-right: auto;
+    color: #000000;
+}
+
+.nav_auth {
+    margin-left: auto;
+    margin-right: 10vw;
+}
+
+.navbar li a {
+    color: #000000;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+[data-theme="dark"] .navbar li a {
+    color: #ffffff;
+}
+
+.navbar li a:hover {
+    background-color: #77ffc0;
+    color: #201b2c;
+}
+
+[data-theme="dark"] .navbar li a:hover {
+    background-color: #77ffc0;
+    color: #ffffff;
+}
+
+/* Hamburger Menu */
+.hamburger-menu {
+    display: none; /* Inicialmente esconde o ícone de hambúrguer */
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.hamburger-menu .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #000;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+/* Register Button */
+.register-button {
+    background-color: #2ec47e;
+    color: #2f2841;
+    border: 2px solid #2f2841;
+    border-radius: 8px;
+    padding: 10px 16px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.register-button:hover {
+    background-color: #2f2841;
+    color: #2ec47e;
+}
+
+[data-theme="dark"] .register-button {
+    background-color: #1e1e1e;
+    color: #fff;
+    border: 2px solid #77ffc0;
+}
+
+[data-theme="dark"] .register-button:hover {
+    background-color: #77ffc0;
+    color: #1e1e1e;
+}
+
+/* Intro Section */
+.intro {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+[data-theme="dark"] .intro {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.intro-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.intro-text {
+    flex: 1; /* Ocupa o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 600px;
+}
+
+.intro-text h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.intro-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* CTA Button */
+.cta-button {
+    background-color: #2ec47e;
+    color: #fff;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: inline-block; /* Garante que o botão respeite o tamanho do texto */
+}
+
+.cta-button:hover {
+    background-color: #2f2841;
+    color: #2ec47e;
+}
+
+[data-theme="dark"] .cta-button {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+[data-theme="dark"] .cta-button:hover {
+    background-color: #77ffc0;
+    color: #1e1e1e;
+}
+
+/* Main Card Section */
+#main_card {
+    background-color: rgb(46, 242, 203);
+    padding: 50px 20px;
+    text-align: center;
+}
+
+/* Learning Methods */
+.learning-methods {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card {
+    position: relative;
+    background-color: #f0ffffde;
+    width: calc(50% - 20px); 
+    max-width: 300px;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #717777de;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.card .card-content {
+    margin-top: auto; /* Alinha o conteúdo no final do card */
+    transition: filter 0.3s;
+}
+
+.card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+/* Study Anytime Section */
+.study-anytime {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+[data-theme="dark"] .study-anytime {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.study-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap;
+}
+
+.study-text {
+    flex: 1; /* Ocupa o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 600px;
+}
+
+.study-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.study-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.study-image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Community Section */
+.community {
+    background-color: #2f2841;
+    color: #fff;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+[data-theme="dark"] .community {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+.community-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+    flex-wrap: wrap-reverse; /* Inverte a ordem dos itens em telas menores */
+}
+
+.community-text {
+    flex: 1; /* Ocupa o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+    max-width: 600px;
+}
+
+.community-text h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.community-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.community-image {
+    width: 100%;
+    max-width: 600px; /* Ajuste conforme necessário */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+.community-image img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+}
+
+/* Learn Languages Section */
+.learn-languages {
+    background-color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+[data-theme="dark"] .learn-languages {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+.languages-container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+.languages-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.languages-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.learn-languages .card {
+    background-color: #f0ffffde;
+    max-width: 250px;
+    flex: 1 1 calc(25% - 20px); /* Cards ocupam 25% do container */
+    margin: 10px;
+}
+
+.learn-languages .card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+.learn-languages .card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.learn-languages .card p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Footer */
+.footer {
+    background-color: #2f2841;
+    color: #fff;
+    padding: 30px 20px;
+    text-align: center;
+    margin-top: px;
+}
+
+.footer .footer-navbar {
+    display: flex;
+    justify-content: space-between; /* Distribui os elementos horizontalmente */
+     /* Alinha no centro vertical */
+    margin-right: 1200px;
+}
+
+.footer .nav_logo {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.footer .nav_logo img {
+    width: 30px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.footer .footer-navbar .nav_links {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column; /* Exibe os itens em coluna */
+    gap: 10px;
+}
+
+.footer .footer-navbar .nav_links li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.footer .footer-navbar .nav_links li a:hover {
+    color: #77ffc0;
+}
+
+.footer .footer-info {
+    max-width: 600px;
+    margin-top: 30px;
+    text-align: left; /* Alinha o texto à esquerda */
+    margin: auto; /* Centraliza horizontalmente */
+}
+
+.footer .footer-info .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.footer .footer-info .social-links a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer .footer-info .social-links a:hover {
+    color: #77ffc0;
+}
+
+.footer .footer-info .contact-info {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.footer-bottom {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 14px;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.footer .nav_logo{
+    color: #fff;
+}
+
+@media (max-width: 1024px) {
+    .intro-container,
+    .study-container,
+    .community-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%; /* Cards ocupam 100% do container em telas menores */
+        max-width: 100%;
+    }
+
+    .community-image {
+        margin-right: 0; 
+        margin-bottom: 20px; 
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .nav_logo {
+        margin: 10px 0;
+    }
+
+    .nav_logo img {
+        width: 30px;
+    }
+
+    .navbar ul {
+        display: none; /* Esconde a lista de links em telas menores */
+        flex-direction: column;
+        position: absolute;
+        top: 60px; /* Ajuste conforme necessário para a posição correta abaixo da barra de navegação */
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .nav_auth {
+        margin-right: 20px;
+        display: flex;
+        gap: 10px;
+    }
+
+    .card {
+        width: 100%; /* Cards ocupam 100% do container em telas menores */
+        max-width: 100%;
+    }
+
+    .learning-methods,
+    .study-container,
+    .community-container {
+        padding: 20px;
+    }
+
+    .learn-languages .card {
+        background-color: #f0ffffde;
+        max-width: 300px; 
+        width: 100%; 
+        margin: 10px;
+    } 
+
+    .navbar ul {
+        display: none; /* Esconde a lista de links em telas menores */
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: #ffffff;
+        box-shadow: 0px 8px 16px rgba(0,0,0,0.1);
+        z-index: 1000;
+    }
+
+    .nav_links.open {
+        display: flex; /* Exibe a lista de links quando o menu está aberto */
+    }
+
+    .hamburger-menu {
+        display: block; /* Exibe o ícone de hambúrguer em telas menores */
+        margin-right: 10px;
+        margin-left: 20px;
+    }
+
+    .nav_auth {
+        display: flex; 
+        gap: 10px; 
+        margin-right: 20px;
+    }
+}
