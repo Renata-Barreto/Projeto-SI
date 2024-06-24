@@ -32,9 +32,9 @@ body * {
     overflow: hidden;
     font-family: 'Noto Sans', sans-serif;
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo da navbar */
+    justify-content: center; 
     align-items: center;
-    padding: 0; /* Remove qualquer padding */
+    padding: 0; 
 }
 
 .nav_links {
@@ -42,22 +42,22 @@ body * {
     display: flex;
     margin: 0;
     padding: 0;
-    justify-content: center; /* Centraliza os links de navegação */
+    justify-content: center; 
 }
 
 .navbar ul {
     list-style-type: none;
-    display: flex; /* Certifique-se de que os itens estejam em linha */
+    display: flex; 
     margin: 0;
     padding: 0;
 }
 
 .navbar li {
-    margin-right: 20px; /* Adiciona espaço entre os itens */
+    margin-right: 20px; 
 }
 
 .navbar li:last-child {
-    margin-right: 0; /* Remove o espaço após o último item */
+    margin-right: 0; 
 }
 
 .navbar li a {
@@ -84,9 +84,9 @@ body * {
     border: none;
     background-color: #2f2841;
     font-family: 'Noto Sans', sans-serif;
-    font-size: 1em; /* adiciona o mesmo tamanho de fonte que os links */
-    cursor: pointer; /* faz o cursor parecer uma mão quando passa sobre o botão */
-    outline: none; /* remove o contorno azul que aparece quando você clica no botão */
+    font-size: 1em; 
+    cursor: pointer; 
+    outline: none; 
 }
 
 .navbar li button:hover {

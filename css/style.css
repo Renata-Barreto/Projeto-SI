@@ -1,18 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
-/* Reset CSS */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Fontes */
+
 body {
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Tema Claro */
 body {
     background-color: aliceblue;
     color: #000;
@@ -23,7 +21,6 @@ body {
     color: #ffffff;
 }
 
-/* Navbar */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -91,9 +88,9 @@ body {
     color: #ffffff;
 }
 
-/* Hamburger Menu */
+
 .hamburger-menu {
-    display: none; /* Inicialmente esconde o ícone de hambúrguer */
+    display: none; 
     cursor: pointer;
     margin-left: 20px;
 }
@@ -106,7 +103,7 @@ body {
     transition: 0.4s;
 }
 
-/* Register Button */
+
 .register-button {
     background-color: #2ec47e;
     color: #2f2841;
@@ -132,7 +129,7 @@ body {
     color: #1e1e1e;
 }
 
-/* Intro Section */
+
 .intro {
     background-color: white;
     padding: 50px 20px;
@@ -154,8 +151,8 @@ body {
 }
 
 .intro-text {
-    flex: 1; /* Ocupa o espaço restante */
-    text-align: left; /* Alinha o texto à esquerda */
+    flex: 1; 
+    text-align: left; 
     max-width: 600px;
 }
 
@@ -175,7 +172,7 @@ body {
     height: auto;
 }
 
-/* CTA Button */
+
 .cta-button {
     background-color: #2ec47e;
     color: #fff;
@@ -187,7 +184,7 @@ body {
     letter-spacing: 0.5px;
     text-transform: uppercase;
     cursor: pointer;
-    display: inline-block; /* Garante que o botão respeite o tamanho do texto */
+    display: inline-block; 
 }
 
 .cta-button:hover {
@@ -205,14 +202,12 @@ body {
     color: #1e1e1e;
 }
 
-/* Main Card Section */
 #main_card {
     background-color: rgb(46, 242, 203);
     padding: 50px 20px;
     text-align: center;
 }
 
-/* Learning Methods */
 .learning-methods {
     display: flex;
     justify-content: center;
@@ -243,7 +238,7 @@ body {
 }
 
 .card .card-content {
-    margin-top: auto; /* Alinha o conteúdo no final do card */
+    margin-top: auto; 
     transition: filter 0.3s;
 }
 
@@ -257,7 +252,7 @@ body {
     margin-bottom: 20px;
 }
 
-/* Study Anytime Section */
+
 .study-anytime {
     background-color: white;
     padding: 50px 20px;
@@ -280,8 +275,8 @@ body {
 }
 
 .study-text {
-    flex: 1; /* Ocupa o espaço restante */
-    text-align: left; /* Alinha o texto à esquerda */
+    flex: 1; 
+    text-align: left; 
     max-width: 600px;
 }
 
@@ -301,7 +296,6 @@ body {
     height: auto;
 }
 
-/* Community Section */
 .community {
     background-color: #2f2841;
     color: #fff;
@@ -321,12 +315,12 @@ body {
     gap: 20px;
     max-width: 1200px;
     margin: auto;
-    flex-wrap: wrap-reverse; /* Inverte a ordem dos itens em telas menores */
+    flex-wrap: wrap-reverse; 
 }
 
 .community-text {
-    flex: 1; /* Ocupa o espaço restante */
-    text-align: left; /* Alinha o texto à esquerda */
+    flex: 1; 
+    text-align: left; 
     max-width: 600px;
 }
 
@@ -342,8 +336,8 @@ body {
 
 .community-image {
     width: 100%;
-    max-width: 600px; /* Ajuste conforme necessário */
-    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+    max-width: 600px; 
+    margin-right: 20px;
 }
 
 .community-image img {
@@ -352,7 +346,6 @@ body {
     height: auto;
 }
 
-/* Learn Languages Section */
 .learn-languages {
     background-color: white;
     padding: 50px 20px;
@@ -383,7 +376,7 @@ body {
 .learn-languages .card {
     background-color: #f0ffffde;
     max-width: 250px;
-    flex: 1 1 calc(25% - 20px); /* Cards ocupam 25% do container */
+    flex: 1 1 calc(25% - 20px); 
     margin: 10px;
 }
 
@@ -414,8 +407,7 @@ body {
 
 .footer .footer-navbar {
     display: flex;
-    justify-content: space-between; /* Distribui os elementos horizontalmente */
-     /* Alinha no centro vertical */
+    justify-content: space-between;
     margin-right: 1200px;
 }
 
@@ -435,7 +427,7 @@ body {
 .footer .footer-navbar .nav_links {
     list-style-type: none;
     display: flex;
-    flex-direction: column; /* Exibe os itens em coluna */
+    flex-direction: column; 
     gap: 10px;
 }
 
@@ -454,15 +446,15 @@ body {
 .footer .footer-info {
     max-width: 600px;
     margin-top: 30px;
-    text-align: left; /* Alinha o texto à esquerda */
-    margin: auto; /* Centraliza horizontalmente */
+    text-align: left; 
+    margin: auto; 
 }
 
 .footer .footer-info .social-links {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin-bottom: 20px; /* Espaçamento inferior */
+    margin-bottom: 20px; 
 }
 
 .footer .footer-info .social-links a {
@@ -502,7 +494,7 @@ body {
     }
 
     .card {
-        width: 100%; /* Cards ocupam 100% do container em telas menores */
+        width: 100%; 
         max-width: 100%;
     }
 
@@ -527,10 +519,10 @@ body {
     }
 
     .navbar ul {
-        display: none; /* Esconde a lista de links em telas menores */
+        display: none; 
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Ajuste conforme necessário para a posição correta abaixo da barra de navegação */
+        top: 60px;
         left: 0;
         right: 0;
         background-color: #ffffff;
@@ -545,7 +537,7 @@ body {
     }
 
     .card {
-        width: 100%; /* Cards ocupam 100% do container em telas menores */
+        width: 100%; 
         max-width: 100%;
     }
 
@@ -563,7 +555,7 @@ body {
     } 
 
     .navbar ul {
-        display: none; /* Esconde a lista de links em telas menores */
+        display: none; 
         flex-direction: column;
         position: absolute;
         top: 60px;
@@ -575,11 +567,11 @@ body {
     }
 
     .nav_links.open {
-        display: flex; /* Exibe a lista de links quando o menu está aberto */
+        display: flex; 
     }
 
     .hamburger-menu {
-        display: block; /* Exibe o ícone de hambúrguer em telas menores */
+        display: block; 
         margin-right: 10px;
         margin-left: 20px;
     }
