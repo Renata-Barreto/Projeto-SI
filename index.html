@@ -9,7 +9,7 @@
   <link rel="shortcut icon" href="imagens/logo.ico" type="image/x-icon">
 </head>
 
-<body>
+<body><a id="linkIndex" href="tutorialteste.html" style="display: none;"></a>
   <nav class="navbar">
     <div class="nav_logo">
       <img src="imagens/logo.png" alt="Logo" class="logo-img">Aprenda Programação
@@ -40,7 +40,7 @@
         <h1>Aprenda a programar gratuitamente</h1>
         <p>Tem interesse em aprender programação? Conheça nossa nova plataforma de tutoriais interativos e gratuitos
           para se tornar um programador de sucesso. Comece sua jornada de codificação hoje!</p>
-        <button class="cta-button">Aprenda Agora</button>
+        <button class="cta-button" onclick="entrar()">Aprenda Agora</button>
       </div>
       <img src="imagens/img1.jpg" alt="Aprenda a Programar" class="intro-image">
     </div>
@@ -208,6 +208,9 @@
         }
       });
     });
+    function entrar() {
+      document.getElementById('linkIndex').click();
+    }
 
   </script>
 </body>
