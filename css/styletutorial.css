@@ -551,7 +551,17 @@ body {
     margin-bottom: 20px;
   }
 }
-
+.video {
+  background-color: #ffffff;
+  text-align: center;
+  padding-bottom: 10%;
+}
+.video p {
+  font-size: 10px;
+}
+.video iframe {
+  display: inline-block;
+}
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
