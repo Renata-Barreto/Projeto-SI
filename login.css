@@ -1,9 +1,18 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
 
+::-webkit-scrollbar{
+    width: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #2f2841;
+    width: 10px;
+}
 body {
     margin: 0;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     overflow: hidden;
+    background-color: #f7f7f7;
+    color: #333;
 }
 
 body * {
@@ -13,7 +22,7 @@ body * {
 .nav_logo {
     display: flex;
     align-items: center;
-    color: #f0ffffde;
+    color: #2b134b;
     font-size: 24px;
     font-weight: 600;
     margin-left: -250px;
@@ -28,13 +37,14 @@ body * {
 }
 
 .navbar {
-    background-color: #2f2841;
+    background-color: #ffffff;
     overflow: hidden;
-    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     display: flex;
     justify-content: center; 
     align-items: center;
     padding: 0; 
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .nav_links {
@@ -62,7 +72,7 @@ body * {
 
 .navbar li a {
     display: block;
-    color: #f0ffffde;
+    color: #2b134b;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -71,19 +81,19 @@ body * {
 
 .navbar li a:hover {
     background-color: #77ffc0;
-    color: #201b2c;
+    color: #ffffff;
 }
 
 .navbar li button {
     display: block;
-    color: #f0ffffde;
+    color: #2b134b;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     transition: background-color 0.3s;
     border: none;
-    background-color: #2f2841;
-    font-family: 'Noto Sans', sans-serif;
+    background-color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
     font-size: 1em; 
     cursor: pointer; 
     outline: none; 
@@ -91,13 +101,13 @@ body * {
 
 .navbar li button:hover {
     background-color: #77ffc0;
-    color: #201b2c;
+    color: #ffffff;
 }
 
 .main-login {
     width: 100vw;
     height: 100vh;
-    background: #201b2c;
+    background: #f7f7f7;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -114,7 +124,7 @@ body * {
 
 .left-login > h1 {
     font-size: 3vw;
-    color: #77ffc0;
+    color: #2b134b;
 }
 
 .left-login-image {
@@ -136,13 +146,13 @@ body * {
     align-items: center;
     flex-direction: column;
     padding: 30px 35px;
-    background: #2f2841;
+    background: #ffffff;
     border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
 }
 
 .card-login > h1 {
-    color: #00ff88;
+    color: #2b134b;
     font-weight: 800;
     margin: 0;
 }
@@ -161,21 +171,21 @@ body * {
     border: none;
     border-radius: 10px;
     padding: 10px;
-    background: #514869;
-    color: #f0ffffde;
+    background: #f0f0f0;
+    color: #333;
     font-size: 12pt;
-    box-shadow: 0px 10px 40px #00000056;
+    box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.1);
     outline: none;
     box-sizing: border-box;
 }
 
 .textfild > label {
-    color: #f0ffffde;
+    color: #333;
     margin-bottom: 10px;
 }
 
 .textfild > input::placeholder {
-    color: #f0ffff94;
+    color: #aaa;
 }
 
 .btn-login {
@@ -188,10 +198,10 @@ body * {
     text-transform: uppercase;
     font-weight: 800;
     letter-spacing: 3px;
-    color: #2b134b;
-    background-color: #00ff88;
+    color: #ffffff;
+    background-color: #2b134b;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+    box-shadow: 0px 10px 40px -12px rgba(0, 0, 0, 0.1);
 }
 
 @media only screen and (min-width: 1650px) {

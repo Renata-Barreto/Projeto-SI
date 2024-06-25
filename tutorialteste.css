@@ -1,13 +1,19 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: #2f2841;
+  width: 10px;
+}
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -129,12 +135,13 @@ header {
 .slider .lista .item .content .button button {
   border: none;
   background-color: #eee;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   cursor: pointer;
   letter-spacing: 2px;
   transition: 0.4s;
   padding: 7px 14px;
+  border-radius: 10px;
 }
 
 .slider .lista .item .content .button button:hover {
@@ -207,7 +214,7 @@ header {
   transform: translateY(50px);
   filter: blur(20px);
   opacity: 0;
-  animation: showContent .5s 1s linear 1 forwards;
+  animation: showContent 0.5s 1s linear 1 forwards;
 }
 
 @keyframes showContent {
@@ -241,7 +248,7 @@ header {
   bottom: 50px;
   left: 50%;
   border-radius: 30px;
-  animation: showImage .5s linear 1 forwards;
+  animation: showImage 0.5s linear 1 forwards;
 }
 
 @keyframes showImage {
@@ -257,7 +264,7 @@ header {
 .slider.next .thumbnail .item:nth-child(1) {
   overflow: hidden;
   opacity: 0;
-  animation: showThumbnail .5s linear 1 forwards;
+  animation: showThumbnail 0.5s linear 1 forwards;
 }
 
 .slider.prev .lista .item img {
