@@ -101,6 +101,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     color: #000000;
+    align-items: flex-start;
 }
 
 .nav_auth {
